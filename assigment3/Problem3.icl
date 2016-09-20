@@ -29,8 +29,13 @@ fac a = a * fac(a-1)
 facmap x = gMap{|*->*|} fac x
 
 
+//Output: (Bin (Bin Leaf 1 Leaf) 2 (Bin (Bin Leaf 6 Leaf) 24 Leaf))
 //Start = gMap{|*->*|} fac t
+
+//Output: [(1,1),(2,2),(3,6),(4,24),(5,120),(6,720),(7,5040)]
 //Start = gMap{|*->*|} (\x -> (x, fac x)) l
+
+//Output: ([1,2,6,24,120,720,5040],(Bin (Bin Leaf 1 Leaf) 2 (Bin (Bin Leaf 6 Leaf) 24 Leaf)))
 Start = gMap{|*->*->*|} facmap facmap (l, t)
 
 	

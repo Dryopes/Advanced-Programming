@@ -168,6 +168,25 @@ derive gRead (,), [], Bin, Coin
 // ---
 // output looks nice if compiled with "Basic Values Only" for console in project options
 
+/*
+Output:
+Oke, write produces: True
+Oke, write produces: False
+Oke, write produces: 0
+Oke, write produces: 123
+Oke, write produces: -36
+Oke, write produces: (42_Nil)
+Oke, write produces: (0(1(2(3(4_Nil)))))
+Oke, write produces: ((True_Nil)_Nil)
+Oke, write produces: (LeafTrueLeaf)
+Oke, write produces: (((Leaf(1_Nil)Leaf)(2_Nil)(Leaf(3_Nil)(Leaf(4(5_Nil))Leaf)))_Nil)
+Oke, write produces: (((Leaf(1_Nil)Leaf)(2_Nil)(Leaf(3_Nil)((Leaf(4(5_Nil))Leaf)(6(7_Nil))(Leaf(8(9_Nil))Leaf))))_Nil)
+Oke, write produces: Head
+Oke, write produces: Tail
+Oke, write produces: (7,True)
+Oke, write produces: (Head,(7,(Tail_Nil)))
+End of the tests.
+*/
 Start = 
   [test True
   ,test False
